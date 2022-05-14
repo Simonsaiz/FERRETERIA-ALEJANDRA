@@ -60,7 +60,7 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: black ;
+    background: linear-gradient( to bottom, black , rgb(34, 34, 34), grey );
     text-align: center;
     color: whitesmoke;
     font-family: 'Lora', serif;
@@ -139,6 +139,10 @@ footer{
     color: white;
     width: 300px;
     height: 30px;
+}
+
+.boton:hover{
+    transform: scale(1.1);
 }
 
 /* ofertas */
@@ -262,6 +266,10 @@ footer{
     font-weight:lighter;
 }
 
+.enviarContacto:hover{
+    transform: scale(1.2);
+}
+
 /* nosotros */
 .nosotros{
     background-color: white;
@@ -280,7 +288,7 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: black;
-    background-color: #bd1616;
+    background-color: #df0707;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
@@ -289,6 +297,25 @@ footer{
 .imagenNosotros{
     margin-top: 100px;
     border-radius: 30px;
+}
+
+.imagenNosotros:hover{
+    animation: aleYoski 5s;
+}
+
+@keyframes aleYoski{
+    0%{
+        border-radius: 50%;
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    75%{
+        transform: translateY(100px)
+    }
 }
 
 @media (min-width: 320px) and (max-width: 520px){
