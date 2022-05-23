@@ -71,6 +71,7 @@ footer{
     text-align: center;
     color: whitesmoke;
     font-family: 'Lora', serif;
+    margin-top: 2rem;
     margin-bottom: 0;
     padding-top: 30px;
     padding-bottom: 50px; 
@@ -86,7 +87,7 @@ footer{
 }
 
 .titulo{
-    color: #bd1616;
+    color: rgb(230, 23, 23) ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     margin-left: 40px;
     margin-right: 60px;
@@ -95,7 +96,7 @@ footer{
 }
 
 .subtitulo{
-    color: #000000;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 40px;
     margin-right: 60px;
@@ -117,12 +118,13 @@ footer{
 .pieFoto{
     margin-top: 10px;
     margin-left: 60px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;  
 }
 
 /* productos */
 
-.productos{
+/* .productos{
     display: flex;
     flex-wrap: wrap;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -132,20 +134,23 @@ footer{
     margin-top: 100px;
     margin-bottom: 100px;
     text-align: center;
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
     justify-content: space-evenly;
-}
+} */
 
 .borde {
-    border: #000000 solid 2px;
+    border: #860707 solid 2px;
 }
 
 .boton{
-    background-color: black;
+    background-color: rgb(230, 23, 23);
     color: white;
-    width: 10rem;
+    font-size: large;
+    border-radius: 1rem;
+    width: 11rem;
     height: 2rem;
+    margin-bottom: 2rem;
 }
 
 .boton:hover{
@@ -163,7 +168,8 @@ footer{
 
 .tituloOfertas{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-weight: bold;
+    font-size: 50px;
     color: black;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -171,129 +177,78 @@ footer{
 }
 
 .container{
+    display:grid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     color: black;
-    margin-top: 100px;
-    margin-bottom: 100px;
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
 }
 
 .descuentoOfertas{
     text-decoration: line-through;
-    color:gray;
+    color: rgb(230, 23, 23);
 }
+
 /* contacto */
 
-/* .mainContacto{
-    display: flex;
-} */
-
-/* .formularioContacto{
-    flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    background-color:whitesmoke;
-    border-color: #bd1616;
-    border-style:double;
-    margin-left: 400px;
-    margin-right: 400px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    padding-bottom: 30px;
-}
- */
- .bordercontacto{
-    border-style: double;
-    text-align: center;
+.mainContacto{
+    background-image: url(../img/imagen\ con\ herramientas.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
     
-    width: 20rem;
+}
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 .contactoTitulo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #000000;
-    margin: 30px;
-    margin-top: 20px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background-color: black;
+    color: white;
     padding: 10px;
 }
 
-.nombreContacto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    color: #000000;
-    margin-bottom: 15px;
-    padding-right: 30px;
-    padding-top: 10px;
-    width: 300px;
+#boton:hover {
+    transform: scale(1.1);
 }
 
-.apellidoContacto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    color: #000000;
-    margin-bottom: 15px;
-    padding-right: 30px;
-    padding-top: 10px;
-    width: 300px;
-}
-
-.emailContacto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    color: #000000;
-    margin-bottom: 15px;
-    padding-right: 30px;
-    padding-top: 10px;
-    width: 300px;
-}
-
-.telefonoContacto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    color: #000000;
-    margin-bottom: 15px;
-    padding-right: 30px;
-    padding-top: 10px;
-    width: 300px;
-}
-
-.mensajeContacto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    color: #000000;
-    margin-bottom: 15px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 120px;
-    width: 300px;
-}
-
-.enviarContacto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color:whitesmoke;
-    background-color:#000000;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    width: 200px;
-    text-align:center;
-    font-weight:lighter;
-}
-
-.enviarContacto:hover{
-    transform: scale(1.2);
+@media (max-width: 480px) {
+    form{
+        width: 100%;
+    }
 }
 
 /* nosotros */
+
 .nosotros{
     background-color: white;
     text-align: center;
@@ -302,6 +257,7 @@ footer{
 .tituloNosotros{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
+    font-weight: bold;
     color: black;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -318,11 +274,16 @@ footer{
 }
 
 .imagenNosotros{
-    margin-top: 100px;
-    border-radius: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 100px;
+    padding-top: 20px;
 }
+    /* margin-top: 100px;
+    border-radius: 30px;
+} */
 
-.imagenNosotros:hover{
+/* .imagenNosotros:hover{
     animation: aleYoski 5s;
 }
 
@@ -339,7 +300,7 @@ footer{
     75%{
         transform: translateY(100px)
     }
-}
+} */
 
 @media (min-width: 320px) and (max-width: 520px){
     header {
@@ -354,9 +315,12 @@ footer{
     section {
         flex-direction: column;
     }
+    .imagenNosotros {
+        width: 200px;
+    }
 }
 
-@media (min-width: 541px) and (max-width: 720px){
+@media (min-width: 521px) and (max-width: 720px){
     header {
         flex-direction: column;
         align-items: center;
@@ -369,7 +333,14 @@ footer{
     section {
         flex-direction: column;
     }
+    .imagenNosotros {
+        width: 250px;
+    }
+}
 
-
+@media (max-width: 480px) {
+    form {
+        width: 100%;
+    }
 }
 
