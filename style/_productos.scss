@@ -1,0 +1,22 @@
+.boton{
+    background-color: $color-botones;
+    color: $color-letras;
+    font-size: large;
+    border-radius: 1rem;
+    width: 11rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.productosTitulo{
+    font-family: $letra-titulo;
+    font-weight: bold;
+    font-size: 40px;
+    color: $color-letras2;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}

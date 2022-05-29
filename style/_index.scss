@@ -1,0 +1,40 @@
+.index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &Titulo{
+        color: $color-letratitulomain;
+        font-family: $letra-titulo; 
+        margin-left: 40px;
+        margin-right: 60px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        text-shadow: rgb(15, 10, 10) 20px 2px 20px;
+    }
+    &Subtitulo{
+        color: $color-letras2;
+        font-family: $letra-contenido;
+        margin-left: 40px;
+        margin-right: 60px;
+        margin-top: 0;
+    }
+    &Figure{
+        display: flex;
+        flex-direction: column;
+        .indexImagenferre{
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 100px;
+            padding-top: 20px;
+            box-shadow: 10px 10px 10px 4px black, 16px 10px 16px 5px red;
+        }
+        .indexPieFoto{
+            margin-top: 10px;
+            margin-left: 60px;
+            font-family: $letra-contenido;
+            font-weight: bold;
+            color:  $color-letras2; 
+        }
+    }
+}

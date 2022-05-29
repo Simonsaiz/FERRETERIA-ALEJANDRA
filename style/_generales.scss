@@ -1,0 +1,30 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+a{
+    font-family: $letra-contenido;
+    font-size: 1.5rem;
+    
+    
+}
+
+main{
+    grid-area: main;
+    background-color: $color-main;
+    margin-top: 0;
+
+}
+
+footer{
+    grid-area: footer;
+    background: $color-footer;
+    text-align: center;
+    color: $color-letras;
+    font-family: 'Lora', serif;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 50px; 
+}

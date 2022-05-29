@@ -1,0 +1,23 @@
+.tituloOfertas{
+    font-family: $letra-titulo;
+    font-weight: bold;
+    font-size: 40px;
+    color: $color-letras2;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container{
+    display:grid;
+    font-family: $letra-contenido;
+    font-size: 20px;
+    color: $color-letras2;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .descuentoOfertas{
+        text-decoration: line-through;
+        color: $color-botones;
+    }
+}
