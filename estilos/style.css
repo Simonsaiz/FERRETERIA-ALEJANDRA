@@ -46,12 +46,13 @@ footer {
 }
 
 .indexTitulo {
-  color: #e61717;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 40px;
-  margin-right: 60px;
-  margin-top: 40px;
-  margin-bottom: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: #000200;
+  margin-top: 50px;
+  color: #e61717;
   text-shadow: #0f0a0a 20px 2px 20px;
 }
 
@@ -106,23 +107,21 @@ footer {
 }
 
 .productosTitulo {
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
   font-weight: bold;
-  font-size: 40px;
   color: #000200;
   margin-top: 50px;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 .tituloOfertas {
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
   font-weight: bold;
-  font-size: 40px;
   color: #000200;
   margin-top: 50px;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 .container {
@@ -159,12 +158,12 @@ form {
 }
 
 form .contactoTitulo {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #f0f3f0;
   text-align: center;
-  margin: 0;
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #000200;
+  margin-top: 50px;
 }
 
 form input, form textarea {
@@ -206,12 +205,18 @@ form .enviarContacto:hover {
 }
 
 .nosotrosTitulo {
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   color: #000200;
   margin-top: 50px;
-  margin-bottom: 30px;
+  /*   font-family: $letra-titulo;
+        font-size: 40px;
+        font-weight: bold;
+        color: $color-letras2;
+        margin-top: 50px;
+        margin-bottom: 30px; */
 }
 
 .nosotrosParrafo {

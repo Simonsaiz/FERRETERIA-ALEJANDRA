@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Poppins:ital,wght@0,300;1,200&display=swap');
 @import 'variables';
+@import 'mixin';
 @import 'generales';
 @import 'index';
 @import 'productos';
 @import 'ofertas';
 @import 'contacto';
 @import 'nosotros';
+
 
 
 @media (min-width: 320px) and (max-width: 520px){

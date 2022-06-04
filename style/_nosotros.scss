@@ -3,12 +3,13 @@
     text-align: center;
     background-color: rgb(165, 158, 158);
     &Titulo{
-        font-family: $letra-titulo;
+        @include titulos;
+      /*   font-family: $letra-titulo;
         font-size: 40px;
         font-weight: bold;
         color: $color-letras2;
         margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 30px; */
     }
     &Parrafo{
         font-family: $letra-contenido;

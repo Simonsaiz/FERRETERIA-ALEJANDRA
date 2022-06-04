@@ -1,0 +1,8 @@
+@mixin titulos {
+    text-align: center;
+    font-family: $letra-titulo;
+    font-size: 50px;
+    font-weight: bold;
+    color: $color-letras2;
+    margin-top: 50px;
+}

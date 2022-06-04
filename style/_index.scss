@@ -4,12 +4,8 @@
     justify-content: center;
     text-align: center;
     &Titulo{
+        @include titulos;
         color: $color-letratitulomain;
-        font-family: $letra-titulo; 
-        margin-left: 40px;
-        margin-right: 60px;
-        margin-top: 40px;
-        margin-bottom: 0;
         text-shadow: rgb(15, 10, 10) 20px 2px 20px;
     }
     &Subtitulo{

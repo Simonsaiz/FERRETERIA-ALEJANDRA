@@ -12,11 +12,5 @@
 }
 
 .productosTitulo{
-    font-family: $letra-titulo;
-    font-weight: bold;
-    font-size: 40px;
-    color: $color-letras2;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    text-align: center;
+    @include titulos;
 }
