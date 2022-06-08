@@ -24,8 +24,13 @@
     section {
         flex-direction: column;
     }
+
+    .nosotros {
+        flex-direction: column;
+    }
+
     .nosotrosImagen {
-        width: 200px;
+        width: 250px;
     }
 }
 
@@ -42,6 +47,11 @@
     section {
         flex-direction: column;
     }
+
+    .nosotros {
+        flex-direction: column;
+    }
+
     .nosotrosImagen {
         width: 250px;
     }

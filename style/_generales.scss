@@ -13,7 +13,7 @@ a{
 main{
     grid-area: main;
     background-color: $color-main;
-    margin-top: 0;
+    /* margin-top: 0; */
 
 }
 
@@ -22,9 +22,8 @@ footer{
     background: $color-footer;
     text-align: center;
     color: $color-letras;
-    font-family: 'Lora', serif;
-    margin-top: 2rem;
+    font-family: $letra-footer;
     margin-bottom: 0;
-    padding-top: 30px;
-    padding-bottom: 50px; 
+    padding-top: 2rem;
+    padding-bottom: 3rem; 
 }
