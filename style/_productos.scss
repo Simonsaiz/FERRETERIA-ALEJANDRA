@@ -1,5 +1,31 @@
+.productos{
+    background-color: rgba(245, 214, 214, 0.247);
+    margin: 0;
+    &Info{
+        font-size: 17px;
+        font-family: $letra-contenido;
+        font-weight: bold;
+    }
+    &Titulo{
+        @include titulos;
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    &Logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-letratitulomain;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 20px;
+
+    }
+}
+
 .boton{
-    background-color: $color-botones;
+    background-color: $color-letratitulomain;
     color: $color-letras;
     font-size: large;
     border-radius: 1rem;
@@ -9,8 +35,4 @@
     &:hover{
         transform: scale(1.1);
     }
-}
-
-.productosTitulo{
-    @include titulos;
 }

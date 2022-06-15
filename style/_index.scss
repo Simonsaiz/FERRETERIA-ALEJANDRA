@@ -24,13 +24,47 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .carousel-item{
-        height: 650px;
-        
-    }
     .indexFoto {
-        height: 650px;
+        height: 550px;
+        width: 450px;
         vertical-align: middle;
+    }
+}
+
+.indexInfo{
+    display: flex;
+    flex-direction: row;
+    font-family: $letra-contenido;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background-color: $color-mainIndex;
+    padding: 10px;
+    &hora{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $color-letras;
+        background-color: $color-navegacion;
+        padding: 10px;
+    }
+    &direccion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $color-letras;
+        background-color: $color-navegacion;
+        padding: 10px;
+    }
+    &mapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-navegacion;
+        padding: 10px;
     }
 }
 
