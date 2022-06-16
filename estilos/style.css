@@ -234,6 +234,12 @@ footer {
   color: #c70505;
 }
 
+.productosInfo {
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
 .mainContacto {
   background-image: url("../img/imagen con herramientas.jpg");
   background-size: 100vw 100vh;
