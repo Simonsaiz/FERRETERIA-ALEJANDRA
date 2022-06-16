@@ -183,10 +183,10 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #e61717;
+  color: #000200;
+  background-color: #D72323;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .boton {
@@ -202,6 +202,11 @@ footer {
 .boton:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.logoEinhell {
+  border: 5px solid black;
+  margin-bottom: 10px;
 }
 
 .tituloOfertas {
@@ -451,7 +456,7 @@ form .enviarContacto:hover {
     margin: 0;
   }
   .logoEinhell {
-    width: 100%;
+    width: 250px;
   }
 }
 
@@ -534,8 +539,7 @@ form .enviarContacto:hover {
     width: 100%;
   }
   .logoEinhell {
-    width: 400px;
-    height: 100px;
+    width: 350px;
   }
 }
 /*# sourceMappingURL=style.css.map */
