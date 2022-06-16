@@ -1,5 +1,8 @@
-.tituloOfertas{
-    @include titulos;
+.ofertas{
+    background-color: $color-productos;
+    &Titulo{
+        @include titulos;
+    }
 }
 
 .container{
