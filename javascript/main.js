@@ -79,7 +79,7 @@ console.log(listaCompleta); */
 
 //COMPRA DE UNA HERRAMIENTA.
 
-let nombreApellido = prompt ("Ingrese su Nombre y Apellido");
+/* let nombreApellido = prompt ("Ingrese su Nombre y Apellido");
     alert (`Hola ${nombreApellido}.`);
 let herramientas = prompt("Este es nuestro catalogo de herramientas Einhell. Ingrese:" +
 "\n1-Taladro inalambrico" +
@@ -170,4 +170,6 @@ while ( herramientas !== "ESC" && herramientas !== "esc"){
     "\n7-Sierra caladora" +
     "\n8-Fresadora" +
     "\nESC para salir.");
-}
+} */
+
+

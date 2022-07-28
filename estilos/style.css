@@ -289,6 +289,7 @@ form .enviarContacto {
   background-color: black;
   color: #f0f3f0;
   padding: 10px;
+  width: 100%;
 }
 
 form .enviarContacto:hover {

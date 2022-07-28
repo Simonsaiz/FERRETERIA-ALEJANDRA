@@ -44,16 +44,16 @@
         </nav>
     </header>
     <main class="mainContacto">
-        <form>
+        <form id="formulario">
             <h1 class="contactoTitulo">CONTACTO</h1>
-            <input class="nombreContacto" type="text" placeholder="Nombre">
-            <input class="apellidoContacto" type="text" placeholder="Apellido">
-            <input class="emailContacto" type="email" placeholder="hola@mail.com"  name="email">
-            <input class="telefonoContacto" type="text" placeholder="Teléfono">
+            <input class="nombreContacto" type="text" name="nombre" placeholder="Nombre"/>
+            <input class="apellidoContacto" type="text" name="apellido" placeholder="Apellido"/>
+            <input class="emailContacto" type="text" name="email" placeholder="hola@mail.com"/>
+            <input class="telefonoContacto" type="text" name="telefono" placeholder="Teléfono"/>
             <div>
-                <textarea class="mensajeContacto" placeholder="Mensaje"></textarea>
-            </div>
-            <input class="enviarContacto" type="button" value="ENVIAR" id="boton">
+                <textarea type="text" name="mensaje" placeholder="Mensaje"></textarea>
+                </div>
+                <button class="enviarContacto" type="submit" value="ENVIAR" id="limpiar">ENVIAR</button>
         </form>
     </main>
     <footer>
@@ -64,5 +64,6 @@
         <p>Copyright 2022  | Ferreteria Alejandra | Todos los derechos reservados</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../javascript/contacto.js"></script>
 </body>
 </html>
