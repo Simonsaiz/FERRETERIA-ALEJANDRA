@@ -6,6 +6,11 @@
         font-family: $letra-contenido;
         font-weight: bold;
     }
+    &Precio{
+        font-size: 17px;
+        font-family: $letra-contenido;
+        font-weight: bold;
+    }
     &Titulo{
         @include titulos;
         margin-top: 0;

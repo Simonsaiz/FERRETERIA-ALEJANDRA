@@ -1,19 +1,54 @@
 //FORMULARIO
 
-const form = document.querySelector('#formulario') 
+window.addEventListener ('load', ()=> {
+    const formulario = document.querySelector('#formulario');
+    const nombreFormulario = document.querySelector('#nombreContacto');
+    const apellidoFormulario = document.querySelector('#apellidoContacto');
+    const emailFormulario = document.querySelector('#emailContacto');
+    const telefonoFormulario = document.querySelector('#telefonoContacto');
+    const mensajeFormulario = document.querySelector('#mensajeContacto');
 
-const enviarContacto = (event) => {
-    event.preventDefault();
-    console.log(
-        event.target.nombre.value,
-        event.target.apellido.value,
-        event.target.email.value,
-        event.target.telefono.value,
-        event.target.mensaje.value);
-        alert ( "Muchas gracias por contactarnos. En la brevedad nos contactaremos con usted.")
-        form.reset ();
-    }
+
+//Validacion datos
+
+    const validarCampos = ()=> {
+        nombre = nombreFormulario.value.trim();
+        apellido = apellidoFormulario.value.trim();
+        email = emailFormulario.value.trim();
+        telefono = telefonoFormulario.value.trim();
+        mensaje = mensajeFormulario.value.trim();
     
-form.addEventListener("submit", enviarContacto);
 
+        if(nombre === "" || apellido === "" || email === "" || telefono === "" || mensaje === "") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Completar campo',
+            })
+        }
+        else { 
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Su consulta fue enviada',
+            showConfirmButton: false,
+            timer: 2000
+        })
+        formulario.reset ();
+        }
+
+        localStorage.setItem('Nombre', nombre)
+        localStorage.setItem('Apellido', apellido)
+        localStorage.setItem('Email', email)
+        localStorage.setItem('Telefono', telefono)
+        localStorage.setItem('Mensaje', mensaje)
+    }
+//Almacenar datos en el storage
+    formulario.addEventListener("submit", (e)=> {
+
+        e.preventDefault();
+        validarCampos();
+    })
+
+
+})
 

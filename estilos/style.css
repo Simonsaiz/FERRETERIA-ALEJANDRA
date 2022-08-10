@@ -158,6 +158,12 @@ footer {
   font-weight: bold;
 }
 
+.productosPrecio {
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
 .productosTitulo {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
