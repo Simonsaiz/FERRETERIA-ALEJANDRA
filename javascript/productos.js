@@ -1,4 +1,5 @@
 const Clickbutton = document.querySelectorAll('.boton')
+const tbody = document.querySelector('.tbody')
 let carrito = []
 
 
@@ -24,43 +25,21 @@ agregarNuevoProducto(nuevoProducto)
 }
 
 function agregarNuevoProducto (nuevoProducto){
-
-carrito.push(nuevoProducto)
-
-renderCarrito()
-}
-
-function renderCarrito(){
-    console.log (carrito)
-}
-
-
-
-function addItemCarrito(newItem){
-
-  const alert = document.querySelector('.alert')
-
-  setTimeout( function(){
-    alert.classList.add('hide')
-  }, 2000)
-    alert.classList.remove('hide')
-
-  const InputElemnto = tbody.getElementsByClassName('input__elemento')
-  for(let i =0; i < carrito.length ; i++){
-    if(carrito[i].title.trim() === newItem.title.trim()){
-      carrito[i].cantidad ++;
-      const inputValue = InputElemnto[i]
+  
+  const InputElemento = tbody.getElementsByClassName('input__elemento')
+  for(let i=0; i < carrito.length; i++){
+    if(carrito[i].titulo.trim() === nuevoProducto.titulo.trim()){
+      carrito[i].cantidad++;
+      const inputValue = InputElemento[i]
       inputValue.value++;
       CarritoTotal()
       return null;
     }
   }
-  
-  carrito.push(newItem)
-  
-  renderCarrito()
-} 
+carrito.push(nuevoProducto)
 
+renderCarrito()
+}
 
 function renderCarrito(){
   tbody.innerHTML = ''
@@ -71,13 +50,13 @@ function renderCarrito(){
     
     <th scope="row">1</th>
             <td class="table__productos">
-              <img src=${item.img}  alt="">
-              <h6 class="title">${item.title}</h6>
+              <img src=${item.imagen}  alt="">
+              <p class="title">${item.titulo}</p>
             </td>
             <td class="table__price"><p>${item.precio}</p></td>
             <td class="table__cantidad">
               <input type="number" min="1" value=${item.cantidad} class="input__elemento">
-              <button class="delete btn btn-danger">x</button>
+              <button class="delete btn btn-danger">X</button>
             </td>
     
     `
@@ -105,21 +84,13 @@ function CarritoTotal(){
 function removeItemCarrito(e){
   const buttonDelete = e.target
   const tr = buttonDelete.closest(".ItemCarrito")
-  const title = tr.querySelector('.title').textContent;
+  const titulo = tr.querySelector('.title').textContent;
   for(let i=0; i<carrito.length ; i++){
 
-    if(carrito[i].title.trim() === title.trim()){
+    if(carrito[i].titulo.trim() === titulo.trim()){
       carrito.splice(i, 1)
     }
   }
-
-  const alert = document.querySelector('.remove')
-
-  setTimeout( function(){
-    alert.classList.add('remove')
-  }, 2000)
-    alert.classList.remove('remove')
-
   tr.remove()
   CarritoTotal()
 }
@@ -127,9 +98,10 @@ function removeItemCarrito(e){
 function sumaCantidad(e){
   const sumaInput  = e.target
   const tr = sumaInput.closest(".ItemCarrito")
-  const title = tr.querySelector('.title').textContent;
+  const titulo = tr.querySelector('.title').textContent;
+  
   carrito.forEach(item => {
-    if(item.title.trim() === title){
+    if(item.titulo.trim() === titulo){
       sumaInput.value < 1 ?  (sumaInput.value = 1) : sumaInput.value;
       item.cantidad = sumaInput.value;
       CarritoTotal()
