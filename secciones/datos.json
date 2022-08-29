@@ -1,0 +1,7 @@
+[
+    {"img": "../img/LinternaInalambrica.jpg", "herramienta": "LINTERNA INALAMBRICA", "descripcion": "Led de alto rendimiento, protatil, facil transporte", "id": 1},
+    {"img": "../img/Bolsoparaherramientas.jpg", "herramienta": "BOLSA PARA HERRAMIENTAS", "descripcion": "Capacidad de 20 Lts, costuras reforzadas, material impermeable", "id": 2},
+    {"img": "../img/Engrampadora.jpg", "herramienta": "ENGRAMPADORA", "descripcion": "Ideal para maderas y aglomerados - 20 disparos por minuto - Seguro contra disparo involuntario", "id": 3},
+    {"img": "../img/Altavozinalambrico.jpg", "herramienta": "ALATAVOZ INALAMBRICO", "descripcion": "Conexion Bluetooth-Conexión AUX (MP3,móvil, etc) - Conexión USB ( Carga de móvil, tablet,etc)", "id": 4}
+
+]

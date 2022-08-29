@@ -250,6 +250,43 @@ footer {
   font-weight: bold;
 }
 
+.btnjs {
+  background-color: gray;
+  font-weight: bold;
+  color: #f0f3f0;
+  padding: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.btnjs:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.imgProdfFetch {
+  width: 150px;
+  height: 150px;
+}
+
 .mainContacto {
   background-image: url("../img/imagen con herramientas.jpg");
   background-size: 100vw 100vh;
@@ -393,6 +430,73 @@ form .enviarContacto:hover {
   border-radius: 80px;
   border: 5px solid white;
   margin-left: 20px;
+}
+
+.cartTitulo {
+  font-family: #e61717;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.table {
+  color: black;
+  font-family: #000200;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* .tableCantidad{
+    align-items: center;
+} */
+.imagenCarrito {
+  width: 10rem;
+  height: 10rem;
+}
+
+.tableProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tablePrice {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  padding-left: 20px;
+  font-weight: bolder;
+}
+
+.delete {
+  background-color: #e61717;
+}
+
+.itemCartTotal {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+.btnCompra {
+  background-color: green;
+  color: #f0f3f0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  border-radius: 50px;
 }
 
 @media (min-width: 320px) and (max-width: 520px) {

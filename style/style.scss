@@ -8,7 +8,7 @@
 @import 'ofertas';
 @import 'contacto';
 @import 'nosotros';
-
+@import 'carritodecompras';
 
 
 @media (min-width: 320px) and (max-width: 520px){
@@ -72,6 +72,8 @@
     .logoEinhell{
         width: 250px;
     }
+
+
 }
 
 @media (min-width: 521px) and (max-width: 720px){
@@ -137,5 +139,7 @@
         width: 350px;
     }
 }
+
+
 
 

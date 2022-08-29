@@ -7,6 +7,7 @@ Clickbutton.forEach(btn => {
     btn.addEventListener('click', agregarAlCarrito)
 })
 
+
 function agregarAlCarrito(e){
     const boton = e.target
     const item = boton.closest('.prod')
@@ -21,12 +22,13 @@ const nuevoProducto =  {
     cantidad: 1
 }
 
+
 agregarNuevoProducto(nuevoProducto)
 }
 
+//Agregar producto al carrito
 function agregarNuevoProducto (nuevoProducto){
-  
-  const InputElemento = tbody.getElementsByClassName('input__elemento')
+  const InputElemento = tbody.getElementsByClassName('inputElemento')
   for(let i=0; i < carrito.length; i++){
     if(carrito[i].titulo.trim() === nuevoProducto.titulo.trim()){
       carrito[i].cantidad++;
@@ -36,11 +38,21 @@ function agregarNuevoProducto (nuevoProducto){
       return null;
     }
   }
+  Swal.fire({
+    position: 'top',
+    icon: 'success',
+    title: 'Producto añadido al carrito',
+    showConfirmButton: false,
+    timer: 1000
+  })
+  
+
 carrito.push(nuevoProducto)
 
 renderCarrito()
 }
 
+//Datos de la herramienta que van a subir a la tabla del carrito
 function renderCarrito(){
   tbody.innerHTML = ''
   carrito.map(item => {
@@ -49,13 +61,13 @@ function renderCarrito(){
     const Content = `
     
     <th scope="row">1</th>
-            <td class="table__productos">
-              <img src=${item.imagen}  alt="">
+            <td class="tableProductos">
+              <img class="imagenCarrito" src=${item.imagen}  alt="">
               <p class="title">${item.titulo}</p>
             </td>
-            <td class="table__price"><p>${item.precio}</p></td>
-            <td class="table__cantidad">
-              <input type="number" min="1" value=${item.cantidad} class="input__elemento">
+            <td class="tablePrice"><p>${item.precio}</p></td>
+            <td class="tableCantidad">
+              <input type="number" min="1" value=${item.cantidad} class="inputElemento">
               <button class="delete btn btn-danger">X</button>
             </td>
     
@@ -64,11 +76,12 @@ function renderCarrito(){
     tbody.append(tr)
 
     tr.querySelector(".delete").addEventListener('click', removeItemCarrito)
-    tr.querySelector(".input__elemento").addEventListener('change', sumaCantidad)
+    tr.querySelector(".inputElemento").addEventListener('change', sumaCantidad)
   })
   CarritoTotal()
 }
 
+//Valor total de la compra
 function CarritoTotal(){
   let Total = 0;
   const itemCartTotal = document.querySelector('.itemCartTotal')
@@ -81,6 +94,7 @@ function CarritoTotal(){
   addLocalStorage()
 }
 
+//Funcion para remover herramientas del carrito
 function removeItemCarrito(e){
   const buttonDelete = e.target
   const tr = buttonDelete.closest(".ItemCarrito")
@@ -93,8 +107,17 @@ function removeItemCarrito(e){
   }
   tr.remove()
   CarritoTotal()
+
+  Swal.fire({
+    position: 'top',
+    icon: 'error',
+    title: 'Producto removido del carrito',
+    showConfirmButton: false,
+    timer: 1000
+  })
 }
 
+//Funcion sumando mismos productos
 function sumaCantidad(e){
   const sumaInput  = e.target
   const tr = sumaInput.closest(".ItemCarrito")
@@ -109,6 +132,7 @@ function sumaCantidad(e){
   })
 }
 
+//LocalStorage
 function addLocalStorage(){
   localStorage.setItem('carrito', JSON.stringify(carrito))
 }

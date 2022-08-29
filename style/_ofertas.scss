@@ -24,3 +24,29 @@
     font-family: $letra-contenido;
     font-weight: bold;
 }
+
+.btnjs{
+    background-color: gray;
+    font-weight: bold;
+    color: $color-letras;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.fetch{
+    display: flex;
+    font-size: 10px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.imgProdfFetch{
+    width: 150px;
+    height: 150px;
+}

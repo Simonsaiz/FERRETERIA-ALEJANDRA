@@ -1,0 +1,60 @@
+.cartTitulo{
+    font-family: $color-letratitulomain;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.table{
+    color: $color-navegacion;
+    font-family: $color-letras2;
+    font-size: 20px;
+    align-items: center;
+}
+
+/* .tableCantidad{
+    align-items: center;
+} */
+
+.imagenCarrito{
+    width: 10rem;
+    height: 10rem;
+}
+
+.tableProductos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tablePrice{
+    font-family: $letra-contenido;
+    font-weight: bold;
+}
+
+.title{
+    font-family: $letra-contenido;
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: bolder;
+    
+}
+
+.delete {
+    background-color: $color-letratitulomain;
+}
+    
+
+
+.itemCartTotal{
+    font-family: $letra-contenido;
+    font-size: 30px;
+}
+
+
+.btnCompra{
+    background-color: green;
+    color: $color-letras;
+    align-items: center;
+    width: 150px;
+    border-radius: 50px;
+}
